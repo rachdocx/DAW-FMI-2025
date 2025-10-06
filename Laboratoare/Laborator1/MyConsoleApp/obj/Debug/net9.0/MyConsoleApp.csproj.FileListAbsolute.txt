@@ -1,0 +1,15 @@
+/Users/gabrielrachieru/DAW-FMI-2025/Laboratoare/Laborator1/MyConsoleApp/bin/Debug/net9.0/MyConsoleApp
+/Users/gabrielrachieru/DAW-FMI-2025/Laboratoare/Laborator1/MyConsoleApp/bin/Debug/net9.0/MyConsoleApp.deps.json
+/Users/gabrielrachieru/DAW-FMI-2025/Laboratoare/Laborator1/MyConsoleApp/bin/Debug/net9.0/MyConsoleApp.runtimeconfig.json
+/Users/gabrielrachieru/DAW-FMI-2025/Laboratoare/Laborator1/MyConsoleApp/bin/Debug/net9.0/MyConsoleApp.dll
+/Users/gabrielrachieru/DAW-FMI-2025/Laboratoare/Laborator1/MyConsoleApp/bin/Debug/net9.0/MyConsoleApp.pdb
+/Users/gabrielrachieru/DAW-FMI-2025/Laboratoare/Laborator1/MyConsoleApp/obj/Debug/net9.0/MyConsoleApp.GeneratedMSBuildEditorConfig.editorconfig
+/Users/gabrielrachieru/DAW-FMI-2025/Laboratoare/Laborator1/MyConsoleApp/obj/Debug/net9.0/MyConsoleApp.AssemblyInfoInputs.cache
+/Users/gabrielrachieru/DAW-FMI-2025/Laboratoare/Laborator1/MyConsoleApp/obj/Debug/net9.0/MyConsoleApp.AssemblyInfo.cs
+/Users/gabrielrachieru/DAW-FMI-2025/Laboratoare/Laborator1/MyConsoleApp/obj/Debug/net9.0/MyConsoleApp.csproj.CoreCompileInputs.cache
+/Users/gabrielrachieru/DAW-FMI-2025/Laboratoare/Laborator1/MyConsoleApp/obj/Debug/net9.0/MyConsoleApp.sourcelink.json
+/Users/gabrielrachieru/DAW-FMI-2025/Laboratoare/Laborator1/MyConsoleApp/obj/Debug/net9.0/MyConsoleApp.dll
+/Users/gabrielrachieru/DAW-FMI-2025/Laboratoare/Laborator1/MyConsoleApp/obj/Debug/net9.0/refint/MyConsoleApp.dll
+/Users/gabrielrachieru/DAW-FMI-2025/Laboratoare/Laborator1/MyConsoleApp/obj/Debug/net9.0/MyConsoleApp.pdb
+/Users/gabrielrachieru/DAW-FMI-2025/Laboratoare/Laborator1/MyConsoleApp/obj/Debug/net9.0/MyConsoleApp.genruntimeconfig.cache
+/Users/gabrielrachieru/DAW-FMI-2025/Laboratoare/Laborator1/MyConsoleApp/obj/Debug/net9.0/ref/MyConsoleApp.dll
