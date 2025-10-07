@@ -2,7 +2,7 @@
 
 class Program
 {
-    bool Problema1(int n)
+    static bool Problema1(int n)
     {
         int inverse = 0, temp = n;
         while (temp != 0)
@@ -16,7 +16,7 @@ class Program
             return false;
     }
 
-    bool Problema2(List<int> v)
+    static bool Problema2(List<int> v)
     {
         bool ok = true;
         for (int i = 0; i < v.Count - 1; i++)
@@ -39,7 +39,7 @@ class Program
         // String s = Console.ReadLine();
         // if (s != null)
         //     n = int.Parse(s); //!!!!!!
-        // if (new Program().Problema1(n))
+        // if (1 2Problema1(n))
         //     Console.WriteLine("Numarul este palindrom");
         // else
         //     Console.WriteLine("Numarul nu este palindrom");
@@ -51,8 +51,8 @@ class Program
         for (int i = 0; i < temp.Length; i++)
             v.Add(int.Parse(temp[i]));
         
-        Program Solution = new Program();
-        if (Solution.Problema2(v))
+
+        if (Problema2(v))
             Console.WriteLine("DA");
         else
             Console.WriteLine("NU");
