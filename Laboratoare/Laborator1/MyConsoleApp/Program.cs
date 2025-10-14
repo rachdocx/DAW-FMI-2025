@@ -36,7 +36,7 @@ class Program
     static void Main(string[] args)
     {
         // int n = 0;
-        // String s = Console.ReadLine();
+        // 
         // if (s != null)
         //     n = int.Parse(s); //!!!!!!
         // if (1 2Problema1(n))
