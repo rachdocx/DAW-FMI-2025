@@ -1,0 +1,14 @@
+﻿<a href="/Articles/New">Adaugare articol</a>
+@foreach (lab4.Models.Article art in ViewBag.Articole)
+{
+<h1>@art.Title</h1>
+<p>@art.Content</p>
+<p>@art.Id</p>
+<p>@art.Date</p>
+
+<a class="btn btn-succes" href="/Articles/Show/@art.Id">Afisare articol</a>
+<br />
+<br />
+<br />
+<a href=""></a>
+}
