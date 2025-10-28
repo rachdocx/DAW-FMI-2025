@@ -1,0 +1,19 @@
+@model Article
+
+<h2>Editare articol</h2>
+
+<form asp-action="Edit" method="post">
+    <input type="hidden" asp-for="Id" />
+
+    <div>
+        <label>Titlu:</label>
+        <input asp-for="Title" />
+    </div>
+
+    <div>
+        <label>Conținut:</label>
+        <textarea asp-for="Content"></textarea>
+    </div>
+
+    <button type="submit">Salvează modificările</button>
+</form>
