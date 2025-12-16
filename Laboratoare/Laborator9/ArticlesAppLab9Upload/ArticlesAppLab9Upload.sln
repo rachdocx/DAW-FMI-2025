@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36518.9 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArticlesAppLab9Upload", "ArticlesAppLab9Upload\ArticlesAppLab9Upload.csproj", "{921FB1A8-A129-4E0B-95A6-D71BCABDBC5E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{921FB1A8-A129-4E0B-95A6-D71BCABDBC5E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{921FB1A8-A129-4E0B-95A6-D71BCABDBC5E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{921FB1A8-A129-4E0B-95A6-D71BCABDBC5E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{921FB1A8-A129-4E0B-95A6-D71BCABDBC5E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {D9C84D21-C221-4EF4-820A-3BC20FB5E1BC}
+	EndGlobalSection
+EndGlobal

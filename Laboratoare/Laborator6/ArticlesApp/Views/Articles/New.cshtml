@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "New";
+}
+
+<h2>Adaugare articol</h2>
+<br />
+
+<form method="post" action="/Articles/New">
+
+    <label>Titlu articol</label>
+    <input type="text" name="Title" />
+    <br />
+    <br />
+
+    <label>Continut articol</label>
+    <textarea name="Content"></textarea>
+    <br />
+    <br />
+
+
+    <label>Selectati categoria</label>
+
+    @*
+    Proprietatea name primeste valoarea CategoryId, si anume id-ul categoriei, fiind atributul care
+    se trimite catre Controller prin post
+    Proprietatea value are id-ul categoriei si valoarea care se afiseaza in dropdown (numele categoriei)
+    *@
+
+    <select name="CategoryId">
+
+        @foreach (var item in ViewBag.Categories)
+        {
+            <option value="@item.Id">@item.CategoryName</option>
+        }
+
+    </select>
+
+    <br />
+
+    <button class="btn btn-success" type="submit">Adauga articol</button>
+
+</form>
+
+

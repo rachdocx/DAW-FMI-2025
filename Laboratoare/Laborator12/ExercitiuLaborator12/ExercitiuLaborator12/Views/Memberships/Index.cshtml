@@ -1,0 +1,45 @@
+﻿@model IEnumerable<ExercitiuLaborator12.Models.Membership>
+
+@{
+    ViewData["Title"] = "Afisare abonamente";
+}
+
+<h1>Afisare abonamente</h1>
+
+@if (TempData["Message"] != null)
+{
+    <div class="alert alert-success">
+        @TempData["Message"]
+    </div>
+}
+
+<p>
+    <a asp-action="New" class="btn btn-primary">Adaugare abonament</a>
+</p>
+
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Titlu</th>
+            <th>Valoare</th>
+            <th>Data Emitere</th>
+            <th>Sala de sport</th>
+            <th>Actiuni</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var abonament in Model)
+        {
+            <tr>
+                <td>@abonament.Titlu</td>
+                <td>@abonament.Valoare</td>
+                <td>@abonament.DataEmitere.ToString("dd/MM/yyyy HH:mm")</td>
+                <td>@abonament.Gym?.Nume</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@abonament.Id" class="btn btn-warning btn-sm">Editare</a>
+                    <a asp-action="Delete" asp-route-id="@abonament.Id" class="btn btn-danger btn-sm">Stergere</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
