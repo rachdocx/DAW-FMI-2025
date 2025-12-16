@@ -1,0 +1,53 @@
+@model ExercitiuLaborator12.Models.Membership
+
+@{
+    ViewData["Title"] = "Editare abonament";
+}
+
+<h1>Editare abonament</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="Edit" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <input type="hidden" asp-for="Id" />
+            <input type="hidden" asp-for="DataEmitere" />
+            
+            <div class="form-group mb-3">
+                <label asp-for="Titlu" class="control-label"></label>
+                <input asp-for="Titlu" class="form-control" />
+                <span asp-validation-for="Titlu" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group mb-3">
+                <label asp-for="Valoare" class="control-label"></label>
+                <input asp-for="Valoare" class="form-control" />
+                <span asp-validation-for="Valoare" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group mb-3">
+                <label class="control-label">Data Emitere</label>
+                <input type="text" class="form-control" value="@Model.DataEmitere.ToString("dd/MM/yyyy HH:mm")" disabled />
+            </div>
+            
+            <div class="form-group mb-3">
+                <label asp-for="GymId" class="control-label">Sala de sport</label>
+                <select asp-for="GymId" class="form-control" asp-items="@ViewBag.GymList">
+                    <option value="">selectati sala de sport</option>
+                </select>
+                <span asp-validation-for="GymId" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Salvează" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">inapoi</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+

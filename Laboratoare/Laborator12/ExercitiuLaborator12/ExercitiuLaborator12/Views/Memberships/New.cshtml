@@ -1,0 +1,46 @@
+@model ExercitiuLaborator12.Models.Membership
+
+@{
+    ViewData["Title"] = "Adaugare abonament";
+}
+
+<h1>Adaugare abonament</h1>
+
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="New" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+            <div class="form-group mb-3">
+                <label asp-for="Titlu" class="control-label"></label>
+                <input asp-for="Titlu" class="form-control" />
+                <span asp-validation-for="Titlu" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group mb-3">
+                <label asp-for="Valoare" class="control-label"></label>
+                <input asp-for="Valoare" class="form-control" />
+                <span asp-validation-for="Valoare" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group mb-3">
+                <label asp-for="GymId" class="control-label">Sala de sport</label>
+                <select asp-for="GymId" class="form-control" asp-items="@ViewBag.GymList">
+                    <option value="">selectati sala de sport</option>
+                </select>
+                <span asp-validation-for="GymId" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Adaugă" class="btn btn-primary" />
+                <a asp-action="Index" class="btn btn-secondary">Inapoi</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+
